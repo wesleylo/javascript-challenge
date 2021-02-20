@@ -20,7 +20,7 @@ function createTable(data) {
 }
 
 function filterData() {
-
+  d3.event.preventDefault(); // prevent refresh
   // Use d3 to find datetime value from the filter
   var date = d3.select("#datetime").property("value");
   var filteredData = tableData;
